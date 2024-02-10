@@ -6,6 +6,8 @@
 @import 'libs/html-grid';
 @import url('fontawesome-all.min.css');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 /*
 	Spectral by HTML5 UP
@@ -125,7 +127,7 @@
 
 	body, input, select, textarea {
 		color: _palette(fg);
-		font-family: _font(family);
+		font-family: _font(mt-body);
 		font-size: 15pt;
 		font-weight: _font(weight);
 		letter-spacing: _size(letter-spacing);
@@ -171,6 +173,7 @@
 
 	h1, h2, h3, h4, h5, h6 {
 		color: _palette(fg-bold);
+		font-family: _font(mt-title);
 		font-weight: _font(weight-extrabold);
 		letter-spacing: _size(letter-spacing-alt);
 		line-height: 1em;
@@ -1601,7 +1604,7 @@
 			&:before, &:after {
 				@include vendor('transition', 'width 0.85s ease');
 				@include vendor('transition-delay', '0.25s');
-				background: _palette(fg-bold);
+				background: _palette(milktoast-brown);
 				content: '';
 				display: block;
 				height: 2px;
@@ -1774,7 +1777,7 @@
 	#main {
 		> header {
 			@include padding(12em, 0);
-			@include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("../../images/DSCF3662.JPG")'));
+			@include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("../../images/449335009322-R1-058-27A.jpeg")'));
 			background-attachment: fixed;
 			background-position: center center;
 			background-repeat: no-repeat;
@@ -1899,9 +1902,9 @@
 
 	body.landing {
 		#page-wrapper {
-			@include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("../../images/DSCF3662.JPG")'));
+			@include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("../../images/449335009322-R1-058-27A.jpeg")'));
 			background-attachment: fixed;
-			background-position: center center;
+			background-position: center bottom;
 			background-repeat: no-repeat;
 			background-size: cover;
 			padding-top: 0;
@@ -1920,8 +1923,8 @@
 
 			#banner,
 			.wrapper.style4 {
-				@include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("../../images/DSCF3662.JPG")'));
-				background-position: center center;
+				@include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("../../images/449335009322-R1-058-27A.jpeg")'));
+				background-position: left top;
 				background-repeat: no-repeat;
 				background-size: cover;
 			}
@@ -1929,5 +1932,23 @@
 			#footer {
 				background-color: darken(_palette(bg), 8);
 			}
+		}
+	}
+
+	#banner-logo{
+		margin: -5rem -2rem -7rem -3rem;
+		width: 30rem;
+	}
+
+	#header-logo{
+		margin: -1.2rem 0 0 0;
+		width: 10rem;
+	}
+
+	@media screen and (max-width: 605px){
+		#banner-logo{
+			margin: -3rem -1.5rem -4rem -1.75rem;
+			padding: 0;
+			width: 17rem;
 		}
 	}
