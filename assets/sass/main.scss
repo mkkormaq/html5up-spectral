@@ -621,7 +621,7 @@
 		display: inline-block;
 		position: relative;
 
-		img {
+		img, iframe {
 			border-radius: 3px;
 			display: block;
 		}
@@ -642,7 +642,7 @@
 		&.right {
 			max-width: 40%;
 
-			img {
+			img, iframe {
 				width: 100%;
 			}
 		}
@@ -652,7 +652,7 @@
 			margin: 0 0 _size(element-margin) 0;
 			width: 100%;
 
-			img {
+			img, iframe {
 				width: 100%;
 			}
 		}
@@ -1068,7 +1068,7 @@
 			border-radius: 0;
 			width: 40%;
 
-			img {
+			img, iframe {
 				border-radius: 0;
 				width: 100%;
 			}
@@ -1166,7 +1166,8 @@
 
 				&.major {
 					h2, h3, h4, h5, h6 {
-						border-color: _palette($p, border);
+						// border-color: _palette($p, border);
+						border: none;
 					}
 
 					p {
@@ -1944,6 +1945,13 @@
 		margin: -1.2rem 0 0 0;
 		width: 10rem;
 	}
+	#one{
+		background-color: inherit;
+	}
+	.video{
+		width: fit-content;
+	}
+
 
 	@media screen and (max-width: 605px){
 		#banner-logo{
