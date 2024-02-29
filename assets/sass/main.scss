@@ -1605,7 +1605,7 @@
 			&:before, &:after {
 				@include vendor('transition', 'width 0.85s ease');
 				@include vendor('transition-delay', '0.25s');
-				background: _palette(milktoast-brown);
+				background: white;
 				content: '';
 				display: block;
 				height: 2px;
@@ -1959,4 +1959,8 @@
 			padding: 0;
 			width: 17rem;
 		}
+	}
+
+	#cta h2{
+		text-align: right;
 	}
