@@ -621,7 +621,7 @@
 		display: inline-block;
 		position: relative;
 
-		img, iframe {
+		img, iframe, video {
 			border-radius: 3px;
 			display: block;
 		}
@@ -642,7 +642,7 @@
 		&.right {
 			max-width: 40%;
 
-			img, iframe {
+			img, iframe, video {
 				width: 100%;
 			}
 		}
@@ -652,7 +652,7 @@
 			margin: 0 0 _size(element-margin) 0;
 			width: 100%;
 
-			img, iframe {
+			img, iframe, video {
 				width: 100%;
 			}
 		}
@@ -1068,7 +1068,7 @@
 			border-radius: 0;
 			width: 40%;
 
-			img, iframe {
+			img, iframe, video {
 				border-radius: 0;
 				width: 100%;
 			}
@@ -1948,9 +1948,7 @@
 	#one{
 		background-color: inherit;
 	}
-	.video{
-		width: fit-content;
-	}
+	
 
 
 	@media screen and (max-width: 605px){
